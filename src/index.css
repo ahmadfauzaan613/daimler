@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  font-family: 'Open Sans', sans-serif, 'Daimler CAC Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fbfbfb;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.backgroundLogin {
+  background-image: url('./Assets/Image/Background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbarS {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbarS {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbarM {
+    display: none;
+  }
+  .navbar2 {
+    display: none;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .navbarM {
+    display: none;
+  }
+  .navbar2 {
+    display: none;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1919px) {
+  .navbarM {
+    display: none;
+  }
+  .navbar2 {
+    display: none;
+  }
+}
+@media (min-width: 1920px) and (max-width: 9999px) {
+  .navbarM {
+    display: none;
+  }
+  .navbar2 {
+    display: none;
+  }
+}
+
+/* .nav-item .active {
+  color: #e14d2a;
+} */
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+.modal {
+  animation: fadein 0.5s;
+}
+.modal:not(.show) {
+  display: none;
+}
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 800ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ujiannn {
+  width: 30%;
+  height: 30%;
+  border: 0px solid;
+  outline-style: none;
+  background-color: #ffff;
+  border: 0px;
+  margin: 17% auto;
+  border-radius: 8px;
+}
+
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.fonteffect {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  font-size: 90px;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 8px 8px #000, 20px 20px #000000;
+}
+
+.timeline {
+  box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+}
+
+.ujiannn2 {
+  width: 30%;
+  height: auto;
+  border: 0px solid;
+  outline-style: none;
+  background-color: #ffff;
+  border: 0px;
+  margin: 20% auto;
+  border-radius: 8px;
+}
